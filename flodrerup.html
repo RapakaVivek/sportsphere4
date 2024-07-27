@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+    <style>
+        .image-container {
+            width: 300px;
+            height: 300px; 
+            overflow: hidden; 
+            border: solid;
+            margin-left: 200px;
+            margin-top: 100px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            position: absolute;
+            transition: all 2s ease-out ;
+            width: 0; 
+            height: 0; 
+            
+           
+            border-radius: 100%;
+        }
+
+        .image-container:hover img {
+            width: 500px; 
+            height: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="images/badminton.jpg" alt="Your Image">
+    </div>
+</body>
+</html>
